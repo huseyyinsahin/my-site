@@ -136,7 +136,7 @@ i {
 }
 /* about */
 .about {
-  width: 80%;
+  width: 60%;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +165,7 @@ i {
 
 .ct_div {
   display: flex;
-  width: 60%;
+  width: 80%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
