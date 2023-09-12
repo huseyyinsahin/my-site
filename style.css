@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Josefin+Sans:wght@300;400;500;600;700&family=Oxanium:wght@400;500;600&family=Roboto+Condensed:wght@300&family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Tilt Neon", cursive;
+}
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* header */
+
+.container {
+  display: flex;
+  border-bottom: 1px solid rgb(214, 204, 204);
+  width: 80%;
+  height: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+.nav_logo {
+  color: #3780c9;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 0px !important;
+}
+.nav_logo i {
+  color: #3780c9;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 0px !important;
+}
+.nav_menu1:hover a {
+  font-size: 3.5rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+.nav_menu1:hover i {
+  font-size: 3.5rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+.nav_ul {
+  display: flex;
+}
+.nav_li1 .nav_li2 .nav_li3,
+a,
+i {
+  margin-left: 20px;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.nav_li1:hover a {
+  font-size: 2.3rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+.nav_li2:hover a {
+  font-size: 2.3rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+.nav_li3:hover a {
+  font-size: 2.3rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+
+.nav_li1:hover i {
+  font-size: 2.3rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+.nav_li2:hover i {
+  font-size: 2.3rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+.nav_li3:hover i {
+  font-size: 2.3rem;
+  color: #3780c9;
+  transition: 1.5s;
+}
+
+/* home */
+
+.home {
+  display: flex;
+  width: 75%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 80px;
+}
+.social_li i {
+  font-size: 4rem;
+  color: #3780c9;
+  margin-top: 20px;
+}
+.social_li i:hover {
+  color: black;
+  font-size: 5rem;
+  transition: 0.7s;
+}
+
+.social_h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.social_h3 {
+  font-size: 1.5rem;
+  color: rgb(101, 104, 107);
+  text-align: center;
+}
+.social_h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(101, 104, 107);
+  margin-bottom: 10px;
+}
+/* about */
+.about {
+  width: 80%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_flex {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 60px;
+}
+.about_p {
+  width: 300px;
+  font-size: 1.5rem;
+}
+.about_img {
+  width: 400px;
+  height: 450px;
+}
+
+/* contact */
+
+.ct_div {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.contact h1 {
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+  height: 150px;
+  width: 80%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgb(214, 204, 204);
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.cont h3 {
+  font-size: 3.5rem;
+  color: rgb(57, 58, 59);
+  font-weight: 800;
+}
+.cont i {
+  font-size: 4.5rem;
+  color: #3780c9;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+.cont i:hover {
+  font-size: 6rem;
+  color: #000000;
+  transition: 1s;
+}
+
+/* footer */
+
+.footer {
+  background-color: #3780c9;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.footer i {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 3px;
+}
+
+.foot_cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer_links li {
+  margin-right: 20px;
+}
+
+.footer_contact p {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
