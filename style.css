@@ -321,7 +321,16 @@ i {
   .footer i {
     font-size: 1.5rem; /* Daha küçük font boyutu */
   }
+
   .footer_contact p {
     font-size: 1rem;
+  }
+
+  .footer_content {
+    flex-wrap: wrap; /* İçeriğin küçük ekranlarda sığmasını sağla */
+  }
+
+  .footer_links li {
+    margin-right: 0; /* Sağdaki boşluğu kaldır */
   }
 }
