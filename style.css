@@ -69,6 +69,32 @@ i {
   font-weight: 400;
 }
 
+#menuButton {
+  color: #3780c9;
+  background-color: #fff;
+  border: none;
+  display: none;
+}
+
+/* Belirli bir ekran genişliği altında butonu göster */
+@media (max-width: 767px) {
+  #menuButton {
+    display: block;
+  }
+  #menuContent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 25px;
+    border-top: 1px solid #ccc; /* Üst kenarlık */
+  }
+  #menuContent >li a, i {
+    margin-right:12px ;
+  }
+}
+
 /* Mobil uyumlu stiller */
 @media (max-width: 767px) {
   .container {
@@ -78,7 +104,9 @@ i {
     height: auto;
     flex-direction: column;
   }
-
+  .nav_logo{
+    padding-left: 25px;
+  }
   .nav_logo,
   .nav_logo i {
     font-size: 2rem;
@@ -197,14 +225,13 @@ i {
 @media (max-width: 767px) {
   .about {
     width: 100%;
-   
+
     height: 350px;
   }
 
   .about h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    
   }
 
   .about_p {

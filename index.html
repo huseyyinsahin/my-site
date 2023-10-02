@@ -17,17 +17,33 @@
     <header class="head">
       <nav class="container">
         <div class="nav_menu nav_menu1">
-          <a href="#" class="nav_logo">Hüseyin <i class="fa-solid fa-code"></i></a>
+          <a href="#" class="nav_logo"
+            >Hüseyin <i class="fa-solid fa-code"></i
+          ></a>
         </div>
-        <div class="nav_menu">
-          <ul class="nav_ul">
-            <li class="nav_li1"><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li class="nav_li2"><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
-            <li class="nav_li3"><a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
-          </ul>
+        <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+        <div id="menuContent" >
+          <div class="nav_menu">
+            <ul class="nav_ul">
+              <li class="nav_li1">
+                <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li class="nav_li2">
+                <a href="#about"
+                  ><i class="fa-solid fa-address-card"></i> About</a
+                >
+              </li>
+              <li class="nav_li3">
+                <a href="#contact"
+                  ><i class="fa-solid fa-address-book"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
+
     <main class="main">
       <section class="home" id="home">
         <div class="social">
@@ -50,7 +66,6 @@
         </div>
       </section>
 
-
       <section class="about" id="about">
         <h2>About Me</h2>
         <div class="about_flex">
@@ -69,7 +84,6 @@
               consectetur adipisicing eli reprehenderit itaque laborum rerum
               soluta, quod magnam. Lorem ipsum dolor, sit amet consectetur
               adipisicing.
-              
             </p>
           </div>
         </div>
@@ -113,5 +127,22 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menuContent = document.getElementById("menuContent");
+
+      menuButton.addEventListener("click", function () {
+        if (
+          menuContent.style.display === "none" ||
+          menuContent.style.display === ""
+        ) {
+          menuContent.style.display = "block";
+        } else {
+          menuContent.style.display = "none";
+        }
+      });
+    </script>
+
   </body>
 </html>
