@@ -3,12 +3,11 @@
   position: static;
   z-index: 0;
 }
-.my-projects-h1{
-    text-align: center; 
-    font-size: 3rem; 
-    margin-top: 60px;
-    color: #3780c9;
-
+.my-projects-h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 60px;
+  color: #3780c9;
 }
 
 .projects1 {
@@ -68,7 +67,7 @@
   .projects1 h1 {
     font-size: 1.5rem;
   }
-  .projects1 p{
+  .projects1 p {
     font-size: 1.2rem;
   }
 }
