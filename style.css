@@ -196,7 +196,7 @@ i {
 
 .ct_div {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -265,6 +265,7 @@ i {
 
 /* Masaüstü uyumlu stiller */
 .footer {
+  width: 100%;
   background-color: #3780c9;
   color: #fff;
   padding: 20px 0;
