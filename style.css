@@ -14,9 +14,9 @@ a {
   color: black;
 }
 
-
 /* header */
 
+/* Genel stiller */
 .container {
   display: flex;
   border-bottom: 1px solid rgb(214, 204, 204);
@@ -30,31 +30,32 @@ a {
   position: fixed;
   z-index: 1;
 }
-.nav_logo {
-  color: #3780c9;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-left: 0px !important;
-}
+
+.nav_logo,
 .nav_logo i {
   color: #3780c9;
   font-size: 3rem;
   font-weight: 600;
   margin-left: 0px !important;
 }
-.nav_menu1:hover a {
-  font-size: 3.5rem;
+
+.nav_menu1:hover a,
+.nav_menu1:hover i,
+.nav_li1:hover a,
+.nav_li2:hover a,
+.nav_li3:hover a,
+.nav_li1:hover i,
+.nav_li2:hover i,
+.nav_li3:hover i {
+  font-size: 2.6rem;
   color: #3780c9;
   transition: 1.5s;
 }
-.nav_menu1:hover i {
-  font-size: 3.5rem;
-  color: #3780c9;
-  transition: 1.5s;
-}
+
 .nav_ul {
   display: flex;
 }
+
 .nav_li1 .nav_li2 .nav_li3,
 a,
 i {
@@ -63,36 +64,28 @@ i {
   font-weight: 400;
 }
 
-.nav_li1:hover a {
-  font-size: 2.3rem;
-  color: #3780c9;
-  transition: 1.5s;
-}
-.nav_li2:hover a {
-  font-size: 2.3rem;
-  color: #3780c9;
-  transition: 1.5s;
-}
-.nav_li3:hover a {
-  font-size: 2.3rem;
-  color: #3780c9;
-  transition: 1.5s;
-}
+/* Mobil uyumlu stiller */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+  }
 
-.nav_li1:hover i {
-  font-size: 2.3rem;
-  color: #3780c9;
-  transition: 1.5s;
-}
-.nav_li2:hover i {
-  font-size: 2.3rem;
-  color: #3780c9;
-  transition: 1.5s;
-}
-.nav_li3:hover i {
-  font-size: 2.3rem;
-  color: #3780c9;
-  transition: 1.5s;
+  .nav_logo,
+  .nav_logo i,
+  .nav_menu1:hover a,
+  .nav_menu1:hover i,
+  .nav_li1:hover a,
+  .nav_li2:hover a,
+  .nav_li3:hover a,
+  .nav_li1:hover i,
+  .nav_li2:hover i,
+  .nav_li3:hover i {
+    font-size: 2rem;
+  }
 }
 
 /* home */
@@ -134,7 +127,20 @@ i {
   color: rgb(101, 104, 107);
   margin-bottom: 10px;
 }
+
+/* Mobil uyumlu stiller */
+@media (max-width: 767px) {
+.home {
+  height: 300px;
+}
+  .social_ul{
+    margin-right:50px ;
+  }
+}
+
+
 /* about */
+/* Genel stiller */
 .about {
   width: 80%;
   height: 600px;
@@ -153,12 +159,37 @@ i {
   margin-bottom: 60px;
 }
 .about_p {
-  width: 250px;
+  margin-top: 50px;
+  width: 300px;
   font-size: 1.5rem;
 }
 .about_img {
   width: 300px;
   height: 450px;
+}
+
+/* Mobil uyumlu stiller */
+@media (max-width: 767px) {
+  .about {
+    width: 100%;
+    padding: 10px;
+    height: 350px;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .about_p {
+    margin: 0;
+    width: 150px;
+    font-size: 1.1rem;
+  }
+  .about_img {
+    width: 150px;
+    height: 300px;
+  }
 }
 
 /* contact */
@@ -186,7 +217,6 @@ i {
   border-bottom: 1px solid rgb(214, 204, 204);
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .cont h3 {
@@ -207,8 +237,33 @@ i {
   transition: 1s;
 }
 
+/* Mobil uyumlu stil */
+@media (max-width: 767px) {
+  .ct_div {
+    height: 120px;
+  }
+  .contact h1 {
+    font-size: 3rem; /* Mobilde daha küçük font boyutu */
+  }
+  .cont h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(57, 58, 59);
+    font-weight: 800;
+  }
+  .cont i {
+    font-size: 3.5rem;
+    margin-right: 0px;
+    margin-left: 35px;
+  }
+  .cont i:hover {
+    font-size: 4.5rem;
+  }
+}
+
 /* footer */
 
+/* Masaüstü uyumlu stiller */
 .footer {
   background-color: #3780c9;
   color: #fff;
@@ -254,4 +309,18 @@ i {
 .footer_contact p {
   margin: 10px 0;
   font-size: 1.3rem;
+}
+
+/* Mobil uyumlu stiller */
+@media (max-width: 767px) {
+  .footer a {
+    font-size: 1.7rem; /* Daha küçük font boyutu */
+  }
+
+  .footer i {
+    font-size: 1.5rem; /* Daha küçük font boyutu */
+  }
+  .footer_contact p {
+    font-size: 1rem;
+  }
 }
