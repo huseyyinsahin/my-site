@@ -4,6 +4,7 @@
   padding: 0;
   font-size: 10px;
   font-family: "Tilt Neon", cursive;
+  box-sizing: border-box;
 }
 ul li {
   text-decoration: none;
@@ -264,6 +265,7 @@ i {
 /* footer */
 
 /* Masaüstü uyumlu stiller */
+
 .footer {
   width: 100%;
   background-color: #3780c9;
@@ -321,16 +323,7 @@ i {
   .footer i {
     font-size: 1.5rem; /* Daha küçük font boyutu */
   }
-
   .footer_contact p {
     font-size: 1rem;
-  }
-
-  .footer_content {
-    flex-wrap: wrap; /* İçeriğin küçük ekranlarda sığmasını sağla */
-  }
-
-  .footer_links li {
-    margin-right: 0; /* Sağdaki boşluğu kaldır */
   }
 }
