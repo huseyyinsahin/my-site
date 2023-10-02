@@ -41,7 +41,6 @@ a {
 
 .nav_menu1:hover a,
 .nav_menu1:hover i {
-  font-size: 3.4rem;
   color: #3780c9;
   transition: 1.5s;
 }
@@ -53,7 +52,6 @@ a {
 .nav_li2:hover i,
 .nav_li3:hover i,
 .nav_li4:hover i {
-  font-size: 2.6rem;
   color: #3780c9;
   transition: 1.5s;
 }
@@ -69,6 +67,7 @@ i {
   font-size: 1.9rem;
   font-weight: 400;
 }
+
 /* buton */
 #menuButton {
   color: #3780c9;
@@ -82,13 +81,14 @@ i {
     display: block;
   }
   #menuContent {
+    box-sizing: content-box;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #fff;
-    padding: 25px;
+    padding: 25px 0 25px 0;
     border-top: 1px solid #ccc;
   }
 }
@@ -109,10 +109,6 @@ i {
     font-size: 2rem;
   }
 
-  .nav_menu1:hover a,
-  .nav_menu1:hover i {
-    font-size: 2.3rem;
-  }
   .nav_li1 a,
   i,
   .nav_li2 a,
@@ -122,17 +118,6 @@ i {
   .nav_li4 a,
   i {
     font-size: 1.1rem;
-  }
-
-  .nav_li1:hover a,
-  .nav_li2:hover a,
-  .nav_li3:hover a,
-  .nav_li4:hover a,
-  .nav_li1:hover i,
-  .nav_li2:hover i,
-  .nav_li3:hover i,
-  .nav_li4:hover i {
-    font-size: 1.2rem;
   }
 
   .nav_menu {
@@ -323,12 +308,6 @@ i {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-}
-
-.foot_cont {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 0px;
 }
 
 .footer_contact p {
