@@ -17,7 +17,6 @@ a {
 
 /* header */
 
-/* Genel stiller */
 .container {
   display: flex;
   border-bottom: 1px solid rgb(214, 204, 204);
@@ -49,9 +48,11 @@ a {
 .nav_li1:hover a,
 .nav_li2:hover a,
 .nav_li3:hover a,
+.nav_li4:hover a,
 .nav_li1:hover i,
 .nav_li2:hover i,
-.nav_li3:hover i {
+.nav_li3:hover i,
+.nav_li4:hover i {
   font-size: 2.6rem;
   color: #3780c9;
   transition: 1.5s;
@@ -61,14 +62,14 @@ a {
   display: flex;
 }
 
-.nav_li1 .nav_li2 .nav_li3,
+.nav_li1 .nav_li2 .nav_li3 .nav_li4,
 a,
 i {
   margin-left: 20px;
   font-size: 1.9rem;
   font-weight: 400;
 }
-
+/* buton */
 #menuButton {
   color: #3780c9;
   background-color: #fff;
@@ -76,26 +77,22 @@ i {
   display: none;
 }
 
-/* Belirli bir ekran genişliği altında butonu göster */
 @media (max-width: 767px) {
   #menuButton {
     display: block;
   }
   #menuContent {
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #fff;
     padding: 25px;
-    border-top: 1px solid #ccc; /* Üst kenarlık */
-  }
-  #menuContent >li a, i {
-    margin-right:12px ;
+    border-top: 1px solid #ccc;
   }
 }
 
-/* Mobil uyumlu stiller */
 @media (max-width: 767px) {
   .container {
     width: 100%;
@@ -104,7 +101,7 @@ i {
     height: auto;
     flex-direction: column;
   }
-  .nav_logo{
+  .nav_logo {
     padding-left: 25px;
   }
   .nav_logo,
@@ -121,17 +118,21 @@ i {
   .nav_li2 a,
   i,
   .nav_li3 a,
+  i,
+  .nav_li4 a,
   i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .nav_li1:hover a,
   .nav_li2:hover a,
   .nav_li3:hover a,
+  .nav_li4:hover a,
   .nav_li1:hover i,
   .nav_li2:hover i,
-  .nav_li3:hover i {
-    font-size: 1.5rem;
+  .nav_li3:hover i,
+  .nav_li4:hover i {
+    font-size: 1.2rem;
   }
 
   .nav_menu {
@@ -183,7 +184,6 @@ i {
   margin-bottom: 10px;
 }
 
-/* Mobil uyumlu stiller */
 @media (max-width: 767px) {
   .home {
     padding-top: 70px;
@@ -193,7 +193,6 @@ i {
 }
 
 /* about */
-/* Genel stiller */
 .about {
   width: 80%;
   height: 600px;
@@ -221,7 +220,6 @@ i {
   height: 450px;
 }
 
-/* Mobil uyumlu stiller */
 @media (max-width: 767px) {
   .about {
     width: 100%;
@@ -290,7 +288,6 @@ i {
   transition: 1s;
 }
 
-/* Mobil uyumlu stil */
 @media (max-width: 767px) {
   .ct_div {
     height: 100px;
@@ -298,7 +295,7 @@ i {
   .contact h1 {
     height: 120px;
     padding-top: 10px;
-    font-size: 3rem; /* Mobilde daha küçük font boyutu */
+    font-size: 3rem;
   }
   .cont h3 {
     text-align: center;
@@ -320,8 +317,6 @@ i {
 
 /* footer */
 
-/* Masaüstü uyumlu stiller */
-
 .footer {
   width: 100%;
   background-color: #3780c9;
@@ -330,39 +325,10 @@ i {
   text-align: center;
 }
 
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 2.5rem;
-}
-
-.footer i {
-  color: #fff;
-  text-decoration: none;
-  font-size: 2rem;
-  margin-left: 3px;
-}
-
 .foot_cont {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer_links ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-.footer_links li {
-  margin-right: 20px;
+  padding: 0 0px;
 }
 
 .footer_contact p {
@@ -370,19 +336,11 @@ i {
   font-size: 1.3rem;
 }
 
-/* Mobil uyumlu stiller */
 @media (max-width: 767px) {
   .footer {
     margin-top: 30px;
   }
 
-  .footer a {
-    font-size: 1.7rem; /* Daha küçük font boyutu */
-  }
-
-  .footer i {
-    font-size: 1.5rem; /* Daha küçük font boyutu */
-  }
   .footer_contact p {
     font-size: 1rem;
   }

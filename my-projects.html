@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Huseyin Sahin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-projects-style.css" />
+
+  </head>
+  <body>
+    <header class="head">
+      <nav class="container">
+        <div class="nav_menu nav_menu1">
+          <a href="#" class="nav_logo"
+            >Hüseyin <i class="fa-solid fa-code"></i
+          ></a>
+        </div>
+        <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+        <div id="menuContent">
+          <div class="nav_menu">
+            <ul class="nav_ul">
+              <li class="nav_li1">
+                <a href="index.html#home"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li class="nav_li2">
+                <a href="index.html#about"
+                  ><i class="fa-solid fa-address-card"></i> About</a
+                >
+              </li>
+              <li class="nav_li3">
+                <a href="index.html#contact"
+                  ><i class="fa-solid fa-address-book"></i> Contact</a
+                >
+              </li>
+              <li class="nav_li4">
+                <a href="my-projects.html"
+                  ><i class="fa-solid fa-file-code"></i> My Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="projects">
+      <div class="projects1">
+        <div class="projects-a">
+          <img src="bg.jpg" alt="" />
+        </div>
+        <div class="projects-i">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="projects-a">
+          <h1>my-works projects</h1>
+        </div>
+
+        <button id="PButton"><i class="fa-solid fa-bars"></i></button>
+        <div id="PContent" class="ProContent">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            aspernatur corrupti voluptatibus debitis error blanditiis mollitia,
+            consectetur voluptate quae rerum! Libero incidunt odio facere a nisi
+            ab nulla saepe enim?Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Dolor aspernatur corrupti voluptatibus debitis
+            error blanditiis mollitia, consectetur voluptate quae rerum! Libero
+            incidunt odio facere a nisi ab nulla saepe enim?Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Dolor aspernatur corrupti
+            voluptatibus debitis error blanditiis mollitia, consectetur
+            voluptate quae rerum! Libero incidunt odio facere a nisi ab nulla
+            saepe enim?
+          </p>
+        </div>
+      </div>
+    </main>
+
+   
+
+    <footer class="footer">
+        <div class="foot_cont">
+         
+          </div>
+          <div class="footer_contact">
+            <p>Contact Information</p>
+            <p>Email: info@example.com</p>
+            <p>Developer Huseyin Sahin</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+
+  <script>
+    const PButton = document.getElementById("PButton");
+    const PContent = document.getElementById("PContent");
+
+    PButton.addEventListener("click", function () {
+      if (PContent.style.display === "none" || PContent.style.display === "") {
+        PContent.style.display = "block";
+      } else {
+        PContent.style.display = "none";
+      }
+    });
+  </script>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const menuContent = document.getElementById("menuContent");
+
+    menuButton.addEventListener("click", function () {
+      if (
+        menuContent.style.display === "none" ||
+        menuContent.style.display === ""
+      ) {
+        menuContent.style.display = "block";
+      } else {
+        menuContent.style.display = "none";
+      }
+    });
+  </script>
+</html>
