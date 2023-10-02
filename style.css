@@ -79,26 +79,24 @@ i {
     flex-direction: column;
   }
 
-  
   .nav_logo,
   .nav_logo i {
-   
     font-size: 2rem;
-    
   }
-  
+
   .nav_menu1:hover a,
   .nav_menu1:hover i {
     font-size: 2.3rem;
-  
   }
-  .nav_li1 a, i,
-  .nav_li2 a, i,
-  .nav_li3 a, i{
+  .nav_li1 a,
+  i,
+  .nav_li2 a,
+  i,
+  .nav_li3 a,
+  i {
     font-size: 1.2rem;
-
   }
-  
+
   .nav_li1:hover a,
   .nav_li2:hover a,
   .nav_li3:hover a,
@@ -106,7 +104,6 @@ i {
   .nav_li2:hover i,
   .nav_li3:hover i {
     font-size: 1.5rem;
-    
   }
 
   .nav_menu {
@@ -161,10 +158,9 @@ i {
 /* Mobil uyumlu stiller */
 @media (max-width: 767px) {
   .home {
-    height: 400px;
-  }
-  .social_ul {
-    margin-right: 30px;
+    padding-top: 70px;
+    height: 290px;
+    width: 100%;
   }
 }
 
@@ -201,13 +197,14 @@ i {
 @media (max-width: 767px) {
   .about {
     width: 100%;
-    padding: 10px;
+   
     height: 350px;
   }
 
   .about h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    
   }
 
   .about_p {
@@ -273,6 +270,7 @@ i {
   }
   .contact h1 {
     height: 120px;
+    padding-top: 10px;
     font-size: 3rem; /* Mobilde daha küçük font boyutu */
   }
   .cont h3 {
@@ -283,7 +281,7 @@ i {
   }
   .cont i {
     font-size: 3.5rem;
-  margin-top: 30px;
+    margin-top: 30px;
 
     margin-right: 0px;
     margin-left: 35px;
