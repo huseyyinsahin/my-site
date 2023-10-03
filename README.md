@@ -1,2 +1,2 @@
 # my-site
- my web site
+web site
