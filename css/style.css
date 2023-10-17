@@ -146,6 +146,7 @@ i {
   font-size: 4rem;
   color: #3780c9;
   margin-top: 20px;
+  margin-left: 0px;
 }
 .social_li i:hover {
   color: black;
@@ -176,6 +177,7 @@ i {
     height: 290px;
     width: 95%;
   }
+
 }
 
 /* about */
