@@ -179,7 +179,9 @@ i {
     height: 290px;
     width: 95%;
   }
-
+  .social_h3 {
+    margin: 20px;
+  }
 }
 
 /* about */
