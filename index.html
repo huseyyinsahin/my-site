@@ -8,8 +8,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-      <link rel="icon" href="img/favicon.png" image="icon" />
+      referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/favicon.png" image="icon" />
     <title>Hüseyin Şahin</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -96,6 +96,36 @@
         </div>
       </section>
 
+      <h1 class="skills">Skills</h1>
+      <section class="load">
+        <div class="loading">
+          <h1>Html</h1>
+          <div class="bar"></div>
+          <hr class="loadingBarGround" />
+          <hr class="loadingBarFront" />
+        </div>
+        <div class="loading">
+          <h1>Css</h1>
+          <div class="bar bar1"></div>
+          <hr class="loadingBarGround" />
+          <hr class="loadingBarFront front1" />
+        </div>
+
+        <div class="loading">
+          <h1>Javasrcipt</h1>
+          <div class="bar bar2"></div>
+          <hr class="loadingBarGround" />
+          <hr class="loadingBarFront front2" />
+        </div>
+
+        <div class="loading">
+          <h1>React Js</h1>
+          <div class="bar bar3"></div>
+          <hr class="loadingBarGround" />
+          <hr class="loadingBarFront front3" />
+        </div>
+      </section>
+
       <section class="contact" id="contact">
         <h1>Contact Me</h1>
         <div class="ct_div">
@@ -121,21 +151,7 @@
       </footer>
     </main>
 
-    <script>
-      const menuButton = document.getElementById("menuButton");
-      const menuContent = document.getElementById("menuContent");
 
-      menuButton.addEventListener("click", function () {
-        if (
-          menuContent.style.display === "none" ||
-          menuContent.style.display === ""
-        ) {
-          menuContent.style.display = "block";
-        } else {
-          menuContent.style.display = "none";
-        }
-      });
-    </script>
-    <script></script>
+    <script src="script.js"></script>
   </body>
 </html>
