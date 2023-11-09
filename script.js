@@ -1,33 +1,3 @@
-const menuButton = document.getElementById("menuButton");
-const menuContent = document.getElementById("menuContent");
-
-menuButton.addEventListener("click", function () {
-  if (
-    menuContent.style.display === "none" ||
-    menuContent.style.display === ""
-  ) {
-    menuContent.style.display = "block";
-  } else {
-    menuContent.style.display = "none";
-  }
-});
-
-const PButton = document.getElementById("PButton");
-const PContent = document.getElementById("PContent");
-
-const menuButton1 = document.getElementById("menuButton");
-const menuContent1 = document.getElementById("menuContent");
-
-menuButton1.addEventListener("click", function () {
-  if (
-    menuContent1.style.display === "none" ||
-    menuContent1.style.display === ""
-  ) {
-    menuContent1.style.display = "block";
-  } else {
-    menuContent1.style.display = "none";
-  }
-});
 
 const bar = document.querySelector(".bar");
 const loadingBarFront = document.querySelector(".loadingBarFront");

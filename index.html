@@ -34,11 +34,14 @@
                 >
               </li>
               <li class="nav_li3">
+                <a href="#skills"><i class="fa-solid fa-rocket"></i> Skills</a>
+              </li>
+              <li class="nav_li4">
                 <a href="#contact"
                   ><i class="fa-solid fa-address-book"></i> Contact</a
                 >
               </li>
-              <li class="nav_li4">
+              <li class="nav_li5">
                 <a href="my-projects.html"
                   ><i class="fa-solid fa-file-code"></i> My Projects</a
                 >
@@ -96,7 +99,7 @@
         </div>
       </section>
 
-      <h1 class="skills">Skills</h1>
+      <h1 class="skills" id="skills">Skills</h1>
       <section class="load">
         <div class="loading">
           <h1>Html</h1>
@@ -112,7 +115,7 @@
         </div>
 
         <div class="loading">
-          <h1>Javasrcipt</h1>
+          <h1>Javascript</h1>
           <div class="bar bar2"></div>
           <hr class="loadingBarGround" />
           <hr class="loadingBarFront front2" />
@@ -150,7 +153,37 @@
         </div>
       </footer>
     </main>
+    <script>
+      const PButton = document.getElementById("PButton");
+      const PContent = document.getElementById("PContent");
 
+      PButton.addEventListener("click", function () {
+        if (
+          PContent.style.display === "none" ||
+          PContent.style.display === ""
+        ) {
+          PContent.style.display = "block";
+        } else {
+          PContent.style.display = "none";
+        }
+      });
+    </script>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menuContent = document.getElementById("menuContent");
+
+      menuButton.addEventListener("click", function () {
+        if (
+          menuContent.style.display === "none" ||
+          menuContent.style.display === ""
+        ) {
+          menuContent.style.display = "block";
+        } else {
+          menuContent.style.display = "none";
+        }
+      });
+    </script>
 
     <script src="script.js"></script>
   </body>

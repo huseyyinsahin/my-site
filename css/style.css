@@ -48,10 +48,11 @@ a {
 .nav_li2:hover a,
 .nav_li3:hover a,
 .nav_li4:hover a,
+.nav_li5:hover a,
 .nav_li1:hover i,
 .nav_li2:hover i,
 .nav_li3:hover i,
-.nav_li4:hover i {
+.nav_li4:hover i .nav_li5:hover i {
   color: #3780c9;
   transition: 1.5s;
 }
@@ -60,7 +61,7 @@ a {
   display: flex;
 }
 
-.nav_li1 .nav_li2 .nav_li3 .nav_li4,
+.nav_li1 .nav_li2 .nav_li3 .nav_li4 .nav_li5,
 a,
 i {
   margin-left: 20px;
@@ -116,12 +117,15 @@ i {
   .nav_li3 a,
   i,
   .nav_li4 a,
+  i,
+  .nav_li5 a,
   i {
-    font-size: 1.1rem;
+    margin-left: 17px;
+    font-size: 0.9rem;
   }
 
   .nav_menu {
-    margin-right: 23px;
+    margin-right: 0px;
   }
   .nav_menu1 {
     margin-right: 0px;
@@ -333,12 +337,13 @@ i {
 
 /* Loading */
 
- .skills {
+.skills {
   font-size: 50px;
   text-align: center;
   margin-top: 30px;
   color: #000000;
 }
+
 .load {
   display: flex;
   justify-content: center;
@@ -349,12 +354,11 @@ i {
   flex-wrap: wrap;
   align-items: center;
   font-size: 40px;
-
 }
-.load h1{
+
+.load h1 {
   font-size: 20px;
   color: #3780c9;
-
 }
 
 .loading {
@@ -363,9 +367,11 @@ i {
   position: relative;
   height: 100px;
 }
+
 .bar {
   font-size: 40px;
 }
+
 .loadingBarGround {
   height: 10px;
   background-color: #aec937;
@@ -374,6 +380,7 @@ i {
   position: absolute;
   width: 100%;
 }
+
 .loadingBarFront {
   height: 10px;
   background-color: #3780c9;
@@ -381,4 +388,21 @@ i {
   border-radius: 5px;
   width: 0%;
   position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .load {
+    height: auto;
+    font-size: 10px;
+    margin: 0 0 0px 0;
+  }
+
+  .loading {
+    width: 80%;
+  }
 }
