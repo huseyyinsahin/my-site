@@ -7,7 +7,7 @@
 .my-projects-h1 {
   text-align: center;
   font-size: 3rem;
-  margin-top: 60px;
+  margin-top: 20px;
   color: #3780c9;
 }
 
@@ -17,8 +17,8 @@
   display: flex;
   width: 70%;
   height: auto;
-  margin-top: 65px;
-  margin-bottom: 150px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   flex-direction: row;
@@ -30,11 +30,14 @@
 
 .projects1 h1 {
   font-size: 3rem;
+  color: #3780c9;
 }
 
 .projects1 img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  color: #3780c9;
+
 }
 .projects1 p {
   font-size: 1.7rem;
@@ -43,8 +46,16 @@
 #PButton {
   color: #3780c9;
   background-color: #fff;
+  cursor: pointer;
   border: none;
 }
+.PButton {
+  color: #3780c9;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
 
 .ProContent {
   display: none;
@@ -53,8 +64,8 @@
   margin-top: 20px;
 }
 .projects-i i {
-  font-size: 3rem;
-  color: #000000;
+  font-size: 4rem;
+  color: #3780c9;
 }
 
 @media (max-width: 767px) {
@@ -71,4 +82,8 @@
   .projects1 p {
     font-size: 1.2rem;
   }
+  .projects-i i {
+    font-size: 2.4rem;
+  }
+  
 }

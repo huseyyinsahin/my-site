@@ -65,27 +65,36 @@
           <img src="../img/bg.jpg" alt="" />
         </div>
         <div class="projects-i">
-          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/huseyyinsahin/my-works"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
         <div class="projects-a">
-          <h1>my-works projects</h1>
+          <h1>my-works project</h1>
         </div>
-
         <button id="PButton"><i class="fa-solid fa-bars"></i></button>
         <div id="PContent" class="ProContent">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
-            aspernatur corrupti voluptatibus debitis error blanditiis mollitia,
-            consectetur voluptate quae rerum! Libero incidunt odio facere a nisi
-            ab nulla saepe enim?Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Dolor aspernatur corrupti voluptatibus debitis
-            error blanditiis mollitia, consectetur voluptate quae rerum! Libero
-            incidunt odio facere a nisi ab nulla saepe enim?Lorem ipsum dolor
-            sit amet, consectetur adipisicing elit. Dolor aspernatur corrupti
-            voluptatibus debitis error blanditiis mollitia, consectetur
-            voluptate quae rerum! Libero incidunt odio facere a nisi ab nulla
-            saepe enim?
-          </p>
+          <p>Web geliştirmeyi öğrenmek amacıyla yaptığım çalışmalar.</p>
+        </div>
+      </div>
+    </main>
+
+    <main class="projects">
+      <div class="projects1">
+        <div class="projects-a">
+          <img src="../img/bg.jpg" alt="" />
+        </div>
+        <div class="projects-i">
+          <a href="https://github.com/huseyyinsahin/my-site"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="projects-a">
+          <h1>my-site project</h1>
+        </div>
+        <button id="PButton1" class="PButton" ><i class="fa-solid fa-bars"></i></button>
+        <div id="PContent1" class="ProContent">
+          <p>Kendimi geliştirmek amacıyla html, css ve javascript ile yaptığım site. Bu sitenin kodlarıdır.</p>
         </div>
       </div>
     </main>
@@ -108,6 +117,19 @@
         PContent.style.display = "block";
       } else {
         PContent.style.display = "none";
+      }
+    });
+  </script>
+
+  <script>
+    const PButton1 = document.getElementById("PButton1");
+    const PContent1 = document.getElementById("PContent1");
+
+    PButton1.addEventListener("click", function () {
+      if (PContent1.style.display === "none" || PContent1.style.display === "") {
+        PContent1.style.display = "block";
+      } else {
+        PContent1.style.display = "none";
       }
     });
   </script>
