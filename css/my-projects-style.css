@@ -43,6 +43,8 @@
   font-size: 1.7rem;
 }
 
+
+
 #PButton {
   color: #3780c9;
   background-color: #fff;
@@ -92,5 +94,5 @@
 /* footer özel */
 
 .footer{
-  margin-top: 250px;
+  margin-top: 200px;
 }
