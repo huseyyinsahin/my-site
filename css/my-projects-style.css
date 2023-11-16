@@ -37,27 +37,17 @@
   width: 80px;
   height: 80px;
   color: #3780c9;
-
 }
 .projects1 p {
   font-size: 1.7rem;
 }
 
-
-
-#PButton {
-  color: #3780c9;
-  background-color: #fff;
-  cursor: pointer;
-  border: none;
-}
 .PButton {
   color: #3780c9;
   background-color: #fff;
   cursor: pointer;
   border: none;
 }
-
 
 .ProContent {
   display: none;
@@ -87,12 +77,10 @@
   .projects-i i {
     font-size: 2.4rem;
   }
-  
 }
-
 
 /* footer özel */
 
-.footer{
+.footer {
   margin-top: 200px;
 }

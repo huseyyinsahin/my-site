@@ -72,7 +72,9 @@
         <div class="projects-a">
           <h1>my-works project</h1>
         </div>
-        <button id="PButton"><i class="fa-solid fa-bars"></i></button>
+        <button id="PButton" class="PButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <div id="PContent" class="ProContent">
           <p>Web geliştirmeyi öğrenmek amacıyla yaptığım çalışmalar.</p>
         </div>
@@ -92,9 +94,14 @@
         <div class="projects-a">
           <h1>my-site project</h1>
         </div>
-        <button id="PButton1" class="PButton" ><i class="fa-solid fa-bars"></i></button>
+        <button id="PButton1" class="PButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <div id="PContent1" class="ProContent">
-          <p>Kendimi geliştirmek amacıyla html, css ve javascript ile yaptığım site. Bu sitenin kodlarıdır.</p>
+          <p>
+            Kendimi geliştirmek amacıyla html, css ve javascript ile yaptığım
+            site. Bu sitenin kodlarıdır.
+          </p>
         </div>
       </div>
     </main>
@@ -126,7 +133,10 @@
     const PContent1 = document.getElementById("PContent1");
 
     PButton1.addEventListener("click", function () {
-      if (PContent1.style.display === "none" || PContent1.style.display === "") {
+      if (
+        PContent1.style.display === "none" ||
+        PContent1.style.display === ""
+      ) {
         PContent1.style.display = "block";
       } else {
         PContent1.style.display = "none";
