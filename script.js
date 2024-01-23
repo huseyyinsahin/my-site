@@ -1,68 +1,56 @@
+const skills = document.getElementById("skills");
+const scrollTopButton = document.getElementById("scrollTopButton");
 
-const bar = document.querySelector(".bar");
-const loadingBarFront = document.querySelector(".loadingBarFront");
+const progressBars = [
+  { bar: "bar1", front: "front1", max: 100 },
+  { bar: "bar2", front: "front2", max: 70 },
+  { bar: "bar3", front: "front3", max: 50 },
+  { bar: "bar4", front: "front4", max: 10 },
+];
 
-let number = 0;
+function updateProgressBar(barSelector, frontSelector, maxNumber) {
+  const bar = document.getElementById(barSelector);
+  const front = document.getElementById(frontSelector);
+  let number = 0;
 
-updateNumber();
+  function updateNumber() {
+    bar.textContent = number + "%";
+    front.style.width = number + "%";
+    number++;
 
-function updateNumber() {
-  bar.textContent = number + "%";
-  loadingBarFront.style.width = number + "%";
-  number++;
-
-  if (number < 101) {
-    setTimeout(updateNumber, 30);
+    if (number <= maxNumber) {
+      setTimeout(updateNumber, 40);
+    }
   }
+
+  function scrollControl() {
+    const loader = skills.getBoundingClientRect();
+
+    if (loader.top < window.innerHeight && !bar.getAttribute("control")) {
+      bar.setAttribute("control", "true");
+      updateNumber();
+    }
+  }
+  window.addEventListener("scroll", scrollControl);
 }
 
-const bar1 = document.querySelector(".bar1");
-const front1 = document.querySelector(".front1");
+progressBars.forEach(({ bar, front, max }) => {
+  updateProgressBar(bar, front, max);
+});
 
-let number1 = 0;
+// button
 
-updateNumber1();
-
-function updateNumber1() {
-  bar1.textContent = number1 + "%";
-  front1.style.width = number1 + "%";
-  number1++;
-
-  if (number1 < 71) {
-    setTimeout(updateNumber1, 30);
-  }
+function scrollTopFunction() {
+  document.documentElement.scrollTop = 0;
 }
 
-const bar2 = document.querySelector(".bar2");
-const front2 = document.querySelector(".front2");
+window.onscroll = () => {
+  scrollFunction();
+};
 
-let number2 = 0;
-
-updateNumber2();
-
-function updateNumber2() {
-  bar2.textContent = number2 + "%";
-  front2.style.width = number2 + "%";
-  number2++;
-
-  if (number2 < 51) {
-    setTimeout(updateNumber2, 30);
-  }
-}
-
-const bar3 = document.querySelector(".bar3");
-const front3 = document.querySelector(".front3");
-
-let number3 = 0;
-
-updateNumber3();
-
-function updateNumber3() {
-  bar3.textContent = number3 + "%";
-  front3.style.width = number3 + "%";
-  number3++;
-
-  if (number3 < 0) {
-    setTimeout(updateNumber3, 30);
-  }
+function scrollFunction() {
+  scrollTopButton.classList.toggle(
+    "scroll",
+    document.documentElement.scrollTop > 100
+  );
 }
