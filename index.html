@@ -31,7 +31,7 @@
           <a class="menu-a" href="#skills">
             <p><i class="fa-solid fa-rocket"></i> Skills</p></a
           >
-          <a class="menu-a" href="">
+          <a class="menu-a" href="#contact">
             <p><i class="fa-solid fa-address-book"></i> Contact</p></a
           >
           <a class="menu-a" href="">
@@ -118,7 +118,64 @@
           <hr class="loadingBarFront" id="front4" />
         </div>
       </section>
+
+      <h2 class="contact-h2">Contact Me</h2>
+      <section id="contact" class="contact">
+        <div class="contact-left">
+          <h3 class="contact-h3">Click and go to Linkedin</h3>
+          <a href="" class="contact-a" href=""
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="contact-right">
+          <h3 class="contact-h3">Click and go to e-mail</h3>
+          <a href="" class="contact-a" href=""
+            ><i class="fa-solid fa-at"></i
+          ></a>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-div">
+          <p>Hi, I am Hüseyin Froent end Developer</p>
+        </div>
+      </div>
+    </footer>
+    
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    <form name="contact" netlify>
+      <p>
+        <label>Name <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
 
     <script src="script.js"></script>
   </body>
