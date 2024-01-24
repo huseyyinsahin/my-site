@@ -55,6 +55,7 @@ function scrollFunction() {
   );
 }
 
+// form
 
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -68,7 +69,6 @@ const handleSubmit = (event) => {
     body: new URLSearchParams(formData).toString(),
   })
     .then(() => {
-      // Burada form başarıyla gönderildikten sonra yapılacak işlemleri ekleyebilirsiniz.
       alert("Form submitted successfully!");
     })
     .catch((error) => alert(error));
