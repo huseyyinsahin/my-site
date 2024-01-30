@@ -54,3 +54,12 @@
   cursor: pointer;
   width: 100%;
 }
+
+.errorMessage {
+  color: red;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: none;
+}

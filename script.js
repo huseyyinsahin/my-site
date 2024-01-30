@@ -1,5 +1,4 @@
 const skills = document.getElementById("skills");
-const scrollTopButton = document.getElementById("scrollTopButton");
 
 const progressBars = [
   { bar: "bar1", front: "front1", max: 100 },
@@ -39,6 +38,7 @@ progressBars.forEach(({ bar, front, max }) => {
 });
 
 // button
+const scrollTopButton = document.getElementById("scrollTopButton");
 
 function scrollTopFunction() {
   document.documentElement.scrollTop = 0;
@@ -57,19 +57,40 @@ function scrollFunction() {
 
 // form
 
+const nameInput = document.getElementById("nameInput");
+const emailInput = document.getElementById("emailInput");
+const messageInput = document.getElementById("messageInput");
+const errorMessage = document.getElementById("errorMessage");
+
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  const myForm = event.target;
-  const formData = new FormData(myForm);
+  if (
+    nameInput.value === "" ||
+    emailInput.value === "" ||
+    messageInput.value === ""
+  ) {
+    errorMessage.style.display = "block";
+    setTimeout(() => {
+      errorMessage.style.display = "none";
+    }, 3000);
+  } else {
+    startConfetti();
+    setTimeout(() => {
+      stopConfetti();
+    }, 5000);
 
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      alert("Form submitted successfully!");
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
     })
-    .catch((error) => alert(error));
+      .then(() => {
+        alert("Form submitted successfully!");
+      })
+      .catch((error) => alert(error));
+  }
 };

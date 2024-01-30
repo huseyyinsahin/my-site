@@ -53,13 +53,26 @@
         onsubmit="handleSubmit(event)"
       >
         <div class="form-name">
-          <label>Your Name<input type="text" name="name" /></label>
+          <label
+            >Your Name<input type="text" name="name" id="nameInput"
+          /></label>
         </div>
         <div class="form-email">
-          <label>Your Email<input type="email" name="email" /></label>
+          <label
+            >Your Email<input type="email" name="email" id="emailInput"
+          /></label>
         </div>
         <div class="form-message">
-          <label>Message<textarea rows="5" name="message"></textarea></label>
+          <label
+            >Message<textarea
+              rows="5"
+              name="message"
+              id="messageInput"
+            ></textarea>
+          </label>
+        </div>
+        <div class="errorMessage" id="errorMessage">
+          <p>Lütfen Tüm Formları Doldurunuz</p>
         </div>
         <div class="form-button">
           <button type="submit">Send</button>
@@ -75,6 +88,7 @@
       </div>
     </footer>
 
+    <script src="confetti.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -90,6 +90,29 @@
   color: white;
 }
 
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background: linear-gradient(to bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 125%; 
+  transform: translate(0, 50%); 
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.messageButton:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* home */
 
 .home {
