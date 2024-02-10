@@ -89,7 +89,7 @@ const handleSubmit = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
-        alert("Form başarıyla gönderildi!");
+        alert("Form submitted successfully!");
       })
       .catch((error) => alert(error));
   }
