@@ -94,3 +94,18 @@ const handleSubmit = (event) => {
       .catch((error) => alert(error));
   }
 };
+
+//my-projects
+
+const PButtons = document.querySelectorAll(".project-button, .project-button2");
+const PContents = document.querySelectorAll(".project-p, .project-p2");
+
+PButtons.forEach((button, index) => {
+  button.addEventListener("click", function () {
+    if (PContents[index].style.display === "none" || PContents[index].style.display === "") {
+      PContents[index].style.display = "block";
+    } else {
+      PContents[index].style.display = "none";
+    }
+  });
+});
