@@ -40,6 +40,26 @@
   font-weight: 500;
 }
 
+/* header mobile */
+
+@media screen and (max-width: 768px) {
+  .header-div {
+    width: 90%; 
+    height: 60px; 
+    justify-content: center;
+  }
+  .menu-nav {
+    margin-left: 10px;
+  }
+  .title-h1 {
+    font-size: 7px;
+  }
+  .menu-a {
+    margin-left: 9px; 
+    font-size: 8px;
+  }
+}
+
 /* button */
 
 .scrollTopButton {
@@ -64,6 +84,12 @@
 }
 .scroll {
   display: block;
+}
+/* button mobile */
+@media screen and (max-width: 768px) {
+  .scrollTopButton i {
+    font-size: 15px;
+  }
 }
 
 /*message button */
@@ -102,8 +128,8 @@
   position: absolute;
   z-index: 1;
   bottom: 50%;
-  left: 125%; 
-  transform: translate(0, 50%); 
+  left: 125%;
+  transform: translate(0, 50%);
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -111,6 +137,17 @@
 .messageButton:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+/*message button mobile*/
+
+@media screen and (max-width: 768px) {
+  .messageButton {
+    padding: 11px 11px;
+  }
+  .messageButton i {
+    font-size: 15px;
+  }
 }
 
 /* home */
@@ -143,6 +180,22 @@
   margin-top: 5px;
 }
 
+/* home mobile */
+
+@media screen and (max-width: 768px) {
+  .home {
+    font-size: 10px;
+    height: 150px;
+  }
+  .home-right {
+    width: 150px;
+  }
+  .home a {
+    font-size: 30px;
+  }
+  
+}
+
 /* about */
 .about-h2 {
   display: flex;
@@ -165,6 +218,24 @@
 }
 .about-p {
   width: 350px;
+}
+
+/* about mobile */
+
+@media screen and (max-width: 768px) {
+  .about-h2 {
+    font-size: 26px;
+  }
+  .about {
+    height: 280px;
+  }
+  .about-img {
+    width: 120px;
+  }
+  .about-p {
+    font-size: 8px;
+    width: 150px;
+  }
 }
 
 /* skills */
@@ -219,6 +290,33 @@
   position: absolute;
 }
 
+/* skills mobile */
+
+@media screen and (max-width: 768px) {
+  .skills-h2 {
+    font-size: 26px;
+  }
+  .skills {
+    height: 250px;
+  }
+  .loading {
+    width: 150px;
+  }
+  .loading-h3 {
+    font-size: 20px;
+  }
+  .bar {
+    font-size: 25px;
+  }
+  .loadingBarGround {
+    height: 7px;
+  }
+  
+  .loadingBarFront {
+    height: 7px;
+  }
+}
+
 /* contact */
 
 .contact-h2 {
@@ -263,6 +361,30 @@
   color: #007bff;
 }
 
+/* contact mobile */
+
+@media screen and (max-width: 768px) {
+  .contact-h2 {
+    font-size: 26px;
+    padding-top: 0px;
+  }
+  .contact {
+    height: 150px;
+  }
+  .contact-left {
+    height: 100px;
+  }
+  .contact-right {
+    height: 100px;
+  }
+  .contact-h3 {
+    font-size: 15px;
+  }
+  .contact-a i {
+    font-size: 30px;
+  }
+}
+
 /* footer */
 
 .footer {
@@ -275,4 +397,13 @@
   background-color: #007bff;
   color: #fff;
   font-size: 15px;
+}
+
+/* footer mobile */
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 100px;
+    font-size: 10px;
+  }
 }
