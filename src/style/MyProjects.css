@@ -1,3 +1,4 @@
+/* MyProjects */
 .my-projects-h2 {
   text-align: center;
   font-size: 30px;
@@ -18,7 +19,7 @@
   padding: 35px;
   margin-bottom: 40px;
 }
-.project-github i {
+.project-github .i {
   font-size: 45px;
   color: black;
 }
@@ -50,15 +51,18 @@
   margin-bottom: 20px;
   display: none;
 }
+.open {
+  display: block;
+}
 
-/* my-projects mobile */
+/* My-Projects mobile */
 
 @media screen and (max-width: 768px) {
   .my-projects-h2 {
     font-size: 25px;
     margin: 0px 0px 30px 0px;
   }
-  .project-github i {
+  .project-github .i {
     font-size: 25px;
   }
   .project-h3 {

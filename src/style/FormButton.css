@@ -1,0 +1,56 @@
+/*message button */
+
+.messageButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: linear-gradient(to bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 13px 12px;
+  cursor: pointer;
+  z-index: 999;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.messageButton .i {
+  font-size: 25px;
+  color: white;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background: linear-gradient(to bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 125%;
+  transform: translate(0, 50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.messageButton:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*message button mobile*/
+
+@media screen and (max-width: 768px) {
+  .messageButton {
+    padding: 11px 11px;
+  }
+  .messageButton .i {
+    font-size: 15px;
+  }
+}
