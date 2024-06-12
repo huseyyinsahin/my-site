@@ -1,9 +1,9 @@
 const skills = document.getElementById("skills");
 
 const progressBars = [
-  { bar: "bar1", front: "front1", max: 100 },
-  { bar: "bar2", front: "front2", max: 70 },
-  { bar: "bar3", front: "front3", max: 50 },
+  { bar: "bar1", front: "front1", max: 80 },
+  { bar: "bar2", front: "front2", max: 50 },
+  { bar: "bar3", front: "front3", max: 20 },
   { bar: "bar4", front: "front4", max: 10 },
 ];
 
